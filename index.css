@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 *{
     text-decoration: none;
-    border: 1px solid gray;
     font-family: 'Noto Sans KR', sans-serif;
 }
 /*html, button, input, select, textarea {
@@ -14,7 +13,6 @@ body {
 li{
     list-style: none;
     display: inline;
-    margin-left: 10px;/*헤더 회원가입*/
 }
 .signin{/*글자색*/
     color: rgb(95, 0, 128);
@@ -28,8 +26,10 @@ li{
     justify-content: flex-end;
     font-size: 12px;
     margin: 0px auto;
-    
     align-items: center;
+}
+.header1>li{
+    margin-left: 10px;
 }
 .header2{
     position: relative;
@@ -53,18 +53,18 @@ li{
     height: 48px;
     display:flex;
     flex-direction: row;
+    align-items: center;
     border: 1px solid rgb(95, 0, 128);
-    border-radius: 6px;
+    border-radius: 6px; 
 }
-.search_1{
+#search_1{
     width: 300px;
-    height: 18.4px;
+    height: 20px;
     font-size: 16px;
 }
 #search{
     position: relative;
-    top:5px;
-    right:-175px;
+    right:-65px;
     width: 36px;
     height: 36px;
     padding: 0px;
@@ -73,12 +73,12 @@ li{
 .map{
     display: flex;
     position: relative;
-    left: 150px;
+    left: 170px;
 }
 button{
     display: flex;
     justify-content: flex-end;
-    border-color: white;
+    border: none;
 }
 .gps{
     width: 36px;
@@ -110,12 +110,19 @@ button{
 }
 .category{
     width: 87px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav>img{
+    width:16px;
+    height:14px;
+    margin-right:14px;
 }
 .nav>ul{
     height:56px;
     display:inline-flex;
     position:relative;
-    margin-right: 80px;
+    margin-left: 120px;
 }
 .nav>ul>li{
     display: flex;
@@ -125,18 +132,14 @@ button{
     padding-top: 14px;
     text-align: center;
 }
-.nav>img{
-    width:16px;
-    height:14px;
-    margin-right:14px;
-}
 #nav{
-    width:130px;
-    height: 32px;
+    width:100px;
+    height: 20px;
     border:1px solid rgb(238 238 238);
     border-radius: 18px;
     text-align: center;
-    padding-top:10px;
+    padding:6px 16px;
     font-size: 13px;
-    
+    margin-left:70px;
 }
+/*nav-end*/
